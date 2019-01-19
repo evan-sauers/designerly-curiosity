@@ -4,15 +4,37 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+#mySlideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#slideshow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
 .slideshow {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.center {
+    position: absolute;
+    z-index: 1;
 }
 
 .navbar {
-    text-align: right;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 a {
@@ -27,23 +49,37 @@ a:hover {
 }
 
 .mySlides {
-    display:none;
+    position: fixed;
+    display: none;
+    width: 800px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .mySlide {
-    display:none;
+    display: none;
+    width: 100%;
+    height: 100%;
 }
 
 .slideButton {
     background: none;
 	color: inherit;
 	border: none;
-	padding: 0;
+	padding: 0px;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    z-index: 10;
 }
 
 button:hover {
     color: whitesmoke;
+}
+
+.copy {
+    overflow: scroll;
+
 }
