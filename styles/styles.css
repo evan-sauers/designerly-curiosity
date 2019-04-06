@@ -19,7 +19,6 @@ li {
 a {
     font-size: 20px;
     text-decoration: none;
-    margin-right: 50px;
     color: #f4c42c;
     transition: filter 0.5s ease;
     -webkit-filter: grayscale(100%);
@@ -37,8 +36,21 @@ h1 {
     margin-left: 50px;
     float: left;
     color: #f4c42c;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    float: left;
+    color: #f4c42c;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
 }
 
 #portfolio { 
@@ -53,17 +65,6 @@ h1 {
     column-gap: 1rem;
 }
 
-.box { 
-    transition: filter 0.5s ease;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-
-}
-
-.box:hover { 
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
 
 .box img {
     max-width: 100%;
@@ -76,6 +77,10 @@ h1 {
     margin-left: 20%;
     margin-right: 20%;
     font-size: 18px;
+}
+
+.img {
+    width: 210px;
 }
 
 .leftImg {
@@ -91,18 +96,32 @@ h1 {
 }
 
 .back {
+    margin-top: 50px;
     display: flex;
     font-size: 20px;
-    padding: 10px 50px 10px 50px;
+    padding: 5px 50px 5px 50px;
     border: none;
     justify-content: center;
     border-radius: 3px;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
+    background-color: #FFFFFF;
 }
 
 .back:hover {
-    color: whitesmoke;
+    color: #f4c42c;
+}
+
+.next {
+    font-size: 50px;
+    margin-top: 48px;
+    margin-left: 50px;
+}
+
+.previous {
+    font-size: 50px;
+    margin-top: 45px;
+    margin-right: 50px;
 }
 
 footer {
